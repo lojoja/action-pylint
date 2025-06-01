@@ -8,7 +8,10 @@
   "settings": {
     "LSP": {
       "LSP-pylsp": {
-        "enabled": true
+        "enabled": true,
+        "settings": {
+          "pylsp.plugins.pylint.executable": "tests/.venv/bin/pylint"
+        }
       },
       "LSP-pyright": {
         "enabled": false

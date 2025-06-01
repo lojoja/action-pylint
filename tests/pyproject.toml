@@ -1,0 +1,21 @@
+[project]
+name = "action-pylint"
+version = "0.0.0"
+requires-python = ">=3.13,<4"
+dependencies = [
+  "pylint (==3.3.6)"
+]
+
+[build-system]
+requires = ["uv_build>=0.7.1,<1.0.0"]
+build-backend = "uv_build"
+
+[tool.pylint.main]
+ignore-paths = ["^(.*/)?.venv/.*$"]
+load-plugins = ["pylint.extensions.mccabe"]
+
+[tool.pylint.design]
+max-complexity = 10
+
+[tool.pylint.format]
+max-line-length = 120
