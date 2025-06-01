@@ -38,6 +38,6 @@ runs:
         working_directory: ${{ inputs.working_directory }}
 
     - name: Run pylint
-      run: poetry run pylint --recursive=y .
+      run: ${{ inputs.package_manager }} run pylint --recursive=y .
       shell: bash
       working-directory: ${{ inputs.working_directory }}
