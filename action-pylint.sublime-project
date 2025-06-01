@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "folder_exclude_patterns": ["__pycache__", "*.egg-info", "node_modules"],
+      "path": "."
+    }
+  ],
+  "settings": {
+    "LSP": {
+      "LSP-pylsp": {
+        "enabled": true
+      },
+      "LSP-pyright": {
+        "enabled": false
+      },
+      "LSP-yaml": {
+        "settings": {
+          "yaml.schemas": {
+            "https://json.schemastore.org/dependabot-2.0.json": ".github/dependabot.yml",
+            "https://json.schemastore.org/github-workflow.json": ".github/workflows/*.yml",
+            "https://json.schemastore.org/github-action.json": "action.yml"
+          }
+        }
+      }
+    }
+  }
+}
