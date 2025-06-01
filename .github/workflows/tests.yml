@@ -8,6 +8,9 @@ on:
   workflow_call:
   workflow_dispatch:
 
+env:
+  PYTHON_VERSION: "3.13"
+
 jobs:
   changes:
     name: Identify changes
@@ -43,7 +46,7 @@ jobs:
       - name: Run pylint action
         uses: ./
         with:
-          python_version: "3.13"
+          python_version: ${{ env.PYTHON_VERSION }}
           working_directory: tests
 
   result:
