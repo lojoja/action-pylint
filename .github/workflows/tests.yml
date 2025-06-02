@@ -29,7 +29,7 @@ jobs:
           paths: |
             - .github/workflows/tests.yml
             - action.yml
-            - tests/*
+            - tests/**
 
   test-pylint:
     name: Test pylint
