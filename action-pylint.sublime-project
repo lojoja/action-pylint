@@ -16,6 +16,12 @@
       "LSP-pyright": {
         "enabled": false
       },
+      "LSP-ruff": {
+        "enabled": false
+      },
+      "LSP-ty": {
+        "enabled": false
+      },
       "LSP-yaml": {
         "settings": {
           "yaml.schemas": {
